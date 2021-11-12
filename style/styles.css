@@ -21,24 +21,33 @@ nav ul{
     list-style-type: none;
     text-align: center;
 }
+nav ul li{
+    position: relative;
+    bottom: 100px;
+}
+/*  */
 /*titre principal servant de logo */
-h1{
+/* h1{
     padding: 0px;
     margin: 0px;
     color: rgba(51, 46, 49, 0.666);
     font: narmal 600 50px/normal trebuchet ;
     display: flex;
     
-}
-nav label{
-    display: block;
-    cursor: pointer;
-    float: right;
-    margin: 20px 30px 0 0;
+} */
+nav ul img{
+    height: 200px;
+    width: 200px;
+    right: 350px;
+    position: relative;
+    bottom: 30px;
 }
 nav ul li:hover{
     background-color: brown;
     box-shadow: 0px 2opx 30px cyan;
+}
+nav .menu{
+    height: 110px;
 }
 
 nav label,nav input{
@@ -56,23 +65,40 @@ nav ul li a{
     font-size: 20px;
     font-family: sans-serif;
 }
-.sous-menu{
-    display: none;
-}
- nav ul li a{
+nav ul li a{
     text-decoration: none;
     color: #fff;    
     margin: 6px 5px;
     padding: 10px;
     text-align: center;
+    height: 10px;
+}
+.sous-menu{
+    display: none;
+}
+nav > ul > li:hover .sous-menu{
+    position: absolute;
+    margin-right: 100px;
+    margin-top: 72px;
 }
 nav ul li:hover .sous-menu{
-    display: flex;
+    display: block;
     position: absolute;
-    margin-left: 15pxpx;
-    background: black;
-    padding: 30pxpx;
-
+    margin-left: -15px;
+    background: #000;
+    padding: 10px;
+}
+.sous-menu li{
+    margin: 5px;
+    padding: 5px ;
+    border-bottom: 1px solid #0080805b;
+    text-align: center;
+}
+.sous-menu li:last-child{
+    border-bottom: none;
+}
+.sous-menu li a:hover{
+    color: teal;
 }
 footer p{
     margin-top: 100%;
